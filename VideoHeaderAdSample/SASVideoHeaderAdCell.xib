@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="600" id="Mob-QM-xsq" customClass="SASVideoHeaderAdCell" customModule="VideoHeaderAdSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="688"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mob-QM-xsq" id="oAl-iC-i23">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="688"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Te-Iq-zPa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="688"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="750" constant="688" id="3JH-uc-2ar"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AC8-os-nbm">
+                        <rect key="frame" x="0.0" y="188" width="393" height="500"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="500" id="vjt-Bn-Pfl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="AC8-os-nbm" secondAttribute="bottom" id="B7E-hZ-r8Z"/>
+                    <constraint firstAttribute="bottom" secondItem="0Te-Iq-zPa" secondAttribute="bottom" id="MN0-3n-mla"/>
+                    <constraint firstAttribute="trailing" secondItem="0Te-Iq-zPa" secondAttribute="trailing" id="PPk-3J-qqf"/>
+                    <constraint firstItem="0Te-Iq-zPa" firstAttribute="top" secondItem="oAl-iC-i23" secondAttribute="top" id="o7k-Fq-Afd"/>
+                    <constraint firstItem="0Te-Iq-zPa" firstAttribute="leading" secondItem="oAl-iC-i23" secondAttribute="leading" id="ub2-Vh-QHS"/>
+                    <constraint firstItem="AC8-os-nbm" firstAttribute="leading" secondItem="oAl-iC-i23" secondAttribute="leading" id="whB-Qc-kcS"/>
+                    <constraint firstAttribute="trailing" secondItem="AC8-os-nbm" secondAttribute="trailing" id="zAB-V7-DS0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="adContainerHeightConstraint" destination="vjt-Bn-Pfl" id="mjZ-DI-ebK"/>
+                <outlet property="adContainerView" destination="AC8-os-nbm" id="FYl-QL-sED"/>
+                <outlet property="paddingViewHeightConstraint" destination="3JH-uc-2ar" id="gjL-KE-D8b"/>
+            </connections>
+            <point key="canvasLocation" x="197.70992366412213" y="54.225352112676056"/>
+        </tableViewCell>
+    </objects>
+</document>

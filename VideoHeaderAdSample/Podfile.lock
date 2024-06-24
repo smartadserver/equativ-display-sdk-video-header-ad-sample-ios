@@ -1,0 +1,16 @@
+PODS:
+  - Equativ-Display-SDK (8.1.0)
+
+DEPENDENCIES:
+  - Equativ-Display-SDK (~> 8.1)
+
+SPEC REPOS:
+  trunk:
+    - Equativ-Display-SDK
+
+SPEC CHECKSUMS:
+  Equativ-Display-SDK: a211524f934efd32e7ceb22efa5d0f5f07735585
+
+PODFILE CHECKSUM: 7438325bb954832cc26cb454322e3a9d879748f6
+
+COCOAPODS: 1.14.3
